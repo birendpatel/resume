@@ -40,6 +40,10 @@
 
 \pagenumbering{gobble} %turn off page num at footer
 
+\usepackage{vwcol}
+\usepackage{amssymb}
+\usepackage{enumitem}
+
 %------------------------------------------------------------------------------%
 % introduction
 %------------------------------------------------------------------------------%
@@ -94,11 +98,6 @@
 \centering{\noindent Tableau}\\
 \centering{\noindent SQL}
 
-\centering{\noindent \textbf {Machine Learning}}\\
-\centering{\noindent Neural Networks}\\
-\centering{\noindent Recommender Systems}\\
-\centering{\noindent NLP}\\
-
 \end{multicols}
 
 %------------------------------------------------------------------------------%
@@ -112,5 +111,46 @@
 %------------------------------------------------------------------------------%
 
 \noindent\textcolor{green}{EDUCATION \rule{16cm}{1pt}}
+
+\begin {vwcol} [
+        widths={0.2,0.8},
+        sep=.8cm,
+        justify=flush,rule=0pt
+]
+
+\noindent \\\textbf {Jun 2020 - Jan 2021}\\
+
+\pagebreak
+
+\noindent \\ \textbf {The University of Texas at Austin}\\
+\noindent Data Engineer
+
+\begin{itemize}[noitemsep,topsep=-8pt]
+ \renewcommand{\labelitemi}{\scriptsize$\blacksquare$}
+ \item An extensively analysis
+ \item Another extensive analysis mate
+\end{itemize}
+
+\end{vwcol}
+
+\begin {vwcol} [
+        widths={0.2,0.8},
+        sep=.8cm,
+        justify=flush,rule=0pt
+]
+
+\noindent \textbf {Dec 2018 - May 2020}\\
+
+\pagebreak
+
+\noindent \\ Database Analyst
+
+\begin{itemize}[noitemsep,topsep=-8pt]
+ \renewcommand{\labelitemi}{\scriptsize$\blacksquare$}
+ \item An extensively analysis
+ \item Another extensive analysis mate
+\end{itemize}
+
+\end{vwcol}
 
 \end{document}

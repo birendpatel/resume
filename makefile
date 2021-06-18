@@ -1,12 +1,16 @@
 # Copyright (C) 2021 Biren Patel
 # Resume build system
 
-.PHONY: resume clean
+.PHONY: open resume clean
 
-RNAME = resume.tex
+RNAME = resume
+
+open: resume
+	xdg-open ./$(RNAME).pdf
 
 resume:
-	pdflatex $(RNAME)
+	pdflatex $(RNAME).tex
 
 clean:
-	rm *.aux *.log *.out *.pdf
+	rm -f *.aux *.log *.out *.pdf
+	clear

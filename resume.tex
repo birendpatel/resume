@@ -41,6 +41,7 @@
 \pagenumbering{gobble} %turn off page num at footer
 
 \usepackage{amssymb}
+\usepackage{amsmath}
 \usepackage{enumitem}
 
 %------------------------------------------------------------------------------%
@@ -52,7 +53,7 @@
 \begin{multicols}{2}
 
 \noindent {\huge BIREN PATEL}\\
-\noindent \textcolor{green}{London, UK}\\
+\noindent \textcolor{green}{London, UK $ \boldsymbol{\cdot} $ UK Citizen}\\
 \noindent \textcolor{green}{$+$44 7542 193719}\\
 
 \columnbreak
@@ -88,7 +89,7 @@
 \centering{\noindent \textbf {Databases}}\\
 \centering{\noindent SQL Server}\\
 \centering{\noindent Oracle}\\
-\centering{\noindent SQLite3}\\
+\centering{\noindent SQLite}\\
 
 \columnbreak
 
@@ -116,7 +117,8 @@
 
 \item Designed a 94\% accurate natural language processing system in PyTorch
 which uses Google BERT embeddings and a neural network ensemble to build donor
-profiles from unstructured text.
+profiles from unstructured text. Presented results at the 2020 New Orleans
+CASE/DRIVE conference.
 
 \item Developed in-database PL/SQL subroutines for entropy estimation,
 time series analysis, tokenization, and phoentic fuzzy matching.
@@ -125,7 +127,8 @@ time series analysis, tokenization, and phoentic fuzzy matching.
 Implemented automatic hyperparameter tuning in Fortran to reduce model training 
 time from several months to several minutes.
 
-\item  
+\item Implemented an Oracle data warehouse to replace a legacy SAS data pipeline
+and designed star schema architectures for a new Azure data warehouse.
 
 \end{itemize}
 
@@ -138,14 +141,15 @@ time from several months to several minutes.
 \begin{itemize}[itemsep=1pt,topsep=1pt]
 \renewcommand{\labelitemi}{\scriptsize$\blacksquare$}
 
-\item Introduced Power BI into the existing data analytics infrastructure to
-provide the C-suite and board of directors with  on-demand dashboards and KPIs.
 
-\item Created an ETL data pipeline in SQL Server to provide automatic
-updates to the dashboards database.
+\item Championed the introduction of Power BI dashboards to the C-suite 
+and board of directors as a simple tool for on-demand visualisations and KPIs. 
 
-\item Authored 60+ SQL Server stored procedures, ad-hoc SQL queries, and SSRS
-reports for 8 departments.
+\item Built an ETL pipeline in SQL Server to sanitize and aggregate
+millions of data records into an easy-to-use format for Power BI.
+
+\item Authored 60+ stored procedures, SSRS reports, dashboards, views, 
+and ad-hoc queries for 8 departments.
 
 \end{itemize}
 
@@ -164,9 +168,8 @@ reports for 8 departments.
 
 \begin{itemize}[noitemsep,topsep=0pt]
 \renewcommand{\labelitemi}{\scriptsize$\blacksquare$}
-\item Thesis: Extreme Values of Genetic Algorithms.
-I analyzed optimization algorithms via probability theory and
-developed monte carlo simulations in NumPy and SciPy.
+\item Thesis: Probabilistic analysis of genetic algorithms via markov chains
+and extreme value theory, with monte carlo simulations in NumPy and SciPy.
 Awarded with distinction.
 \end{itemize}
 

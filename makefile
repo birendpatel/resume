@@ -17,6 +17,7 @@ TARGET =
 LOCATION =
 CITIZENSHIP =
 PHONE =
+SUMMARY =
 
 #------------------------------------------------------------------------------
 
@@ -24,12 +25,14 @@ uk: TARGET += $(UK_NAME)
 uk: LOCATION += London, UK 
 uk: CITIZENSHIP += UK Citizen 
 uk: PHONE += +44 7542 193719
+uk: SUMMARY += I am a UK citizen based in London.
 uk: docs sub create open
 
 us: TARGET += $(US_NAME)
 us: LOCATION += Austin, TX 
 us: CITIZENSHIP += US Citizen 
-us: PHONE += (737) 216 - 3411 
+us: PHONE += (737) 216 - 3411
+us: SUMMARY += I am a US citizen based in Austin, TX.
 us: docs sub create open
 
 #------------------------------------------------------------------------------
@@ -41,6 +44,7 @@ sub:
 	sed 's/LOCATION/$(LOCATION)/g' $(BASEFILE).tex > $(TARGET).tex
 	sed -i 's/CITIZENSHIP/$(CITIZENSHIP)/g' $(TARGET).tex
 	sed -i 's/PHONE_NUMBER/$(PHONE)/g' $(TARGET).tex
+	sed -i 's/ADD_SUMMARY/$(SUMMARY)/g' $(TARGET).tex
 
 create:
 	pdflatex $(TARGET).tex
